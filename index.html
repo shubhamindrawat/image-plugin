@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css" />
+    <link rel="Stylesheet" type="text/css" href="croppie.css" />
+    <link rel="Stylesheet" type="text/css" href="demo/demo.css" />
+</head>
+<body>
+    <section>
+        <div class="demo-wrap">
+            <div class="container">
+				<button class="btn" style="background-color: #68b828;" id="add">New Image</button>
+                <div class="grid">
+                    <div class="col-1-4 cropper">
+                        <div class="vanilla-demo"></div>
+                        <div class="actions" align="center">
+                            <a class="open btn">
+                                <input type="file" class="upload" accept="image/*" />
+                            </a>
+                            <button class="btn vanilla-result save"></button>
+                            <button class="btn vanilla-rotate rotate-left" data-deg="90"></button>
+                            <button class="btn vanilla-rotate rotate-right" data-deg="-90"></button>
+                            <button class="btn remove"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="croppie.js"></script>
+    <script src="demo/demo.js"></script>
+    <script>
+        Demo.init();
+    </script>
+</body>
+</html>
